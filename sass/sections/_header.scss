@@ -1,0 +1,146 @@
+.main {
+    background-image: url(/images/header-bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // On PC
+    @media screen and (min-width: $size-site-md) {
+        background-position: center 0;
+        background-repeat: repeat-x;
+        background-size: contain;
+    }
+
+    overflow: hidden;
+}
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // On PC
+    @media screen and (min-width: $size-site-md) {
+        flex-wrap: nowrap;
+        padding-bottom: $space__section;
+    }
+
+    .main-header__logo {
+        padding-bottom: $space__component-md;
+        text-align: center;
+        width: 100%;
+
+        // On PC
+        @media screen and (min-width: $size-site-md) {
+            padding-bottom: 0;
+            width: 20%;
+        }
+
+        img {
+            display: inline-block;
+            margin: auto;
+        }
+    }
+
+    .main-header__menu {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: $normal__font--size;
+        justify-content: space-between;
+        padding-bottom: $space__component-md;
+        width: 100%;
+
+        // On PC
+        @media screen and (min-width: $size-site-md) {
+            border-bottom: solid 1px $primary__color;            
+            flex-wrap: nowrap;
+            font-size: $small__font--size;
+            padding-bottom: 0;            
+            max-height: 50px;
+            width: 60%;            
+        }
+
+        li {
+            width: 48%;
+
+            // On PC
+            @media screen and (min-width: $size-site-md) {
+                width: inherit;
+            }
+
+            a {
+                display: block;
+                border: solid 1px $primary__color;
+                padding: $space__component-xs;
+                margin-bottom: $space__component-xs;
+                border-radius: 6px;
+                text-align: center;
+
+                // On PC
+                @media screen and (min-width: $size-site-md) {                    
+                    padding: $space__component-xs 0;
+                    border: none;
+                }
+
+                &:hover {
+                    transition: all 0.4s;
+                    color: $accent__color;
+                    border: solid 1px $accent__color;
+
+                    // On PC
+                    @media screen and (min-width: $size-site-md) {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-banner {
+    text-align: center;
+
+    &__heading {
+        font-weight: 400;
+        font-size: 48px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        span {
+            display: block;
+            font-size: 144px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.04);
+            text-shadow: 0px 18px 18px rgba(0, 0, 0, 0.25);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #f9efe1;
+        }
+    }
+
+    &__link-theme {
+        a {
+            color: $primary__color--dark;
+            font-size: $small__font--size;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &::after {
+                content: url(/images/arrow-up-right.svg);
+            }
+        }
+        padding-bottom: $space__gutter--mobile;
+    }
+
+    &__action {
+        padding: $space__gutter--mobile;
+
+        .btn {
+            // On PC
+            @media screen and (min-width: $size-site-md) {
+                margin: 0 $space__component-sm/2;
+            }            
+        }
+    }
+}

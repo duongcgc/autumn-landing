@@ -1,0 +1,113 @@
+// Elements
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    font-family: $body__font;
+    font-size: $body__font--size;
+    color: $primary__color;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: $primary__color;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+// Layouts
+.wrapper-boxed {
+    @include container--boxed();
+    display: flex;
+    justify-content: space-between;
+    padding: $space__gutter--mobile;
+}
+
+.column-half {
+    width: 50%;
+}
+
+// Components
+
+.button {
+    width: 100%;
+
+    // On PC
+    @media screen and (min-width: $size-site-md) {
+        width: inherit;      
+    }
+}
+
+.btn {
+    display: block;
+    background-color: $primary__color;
+    transition: all 0.4s;
+
+    color: #ffffff;
+    border-radius: 6px;
+    padding: ($space__component-xs) $space__component-sm;
+    font-size: $small__font--size;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: $space__component-sm;    
+
+    // On PC
+    @media screen and (min-width: $size-site-md) {        
+        display: inline-block;
+        letter-spacing: inherit;
+        margin-bottom: 0;  
+    }
+
+    span {
+        text-decoration: underline;
+    }
+
+    &:hover {
+        background-color: $accent__color;
+        transition: all 0.4s;
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: solid 1px $primary__color;
+        color: $primary__color;
+
+        &.btn--dark {
+            background-color: transparent;
+            border: solid 1px $primary__color--dark;
+            color: $primary__color--dark;
+        }
+
+        &:hover {
+            color: $primary__color--dark;
+            border: solid 1px $primary__color--dark;
+        }
+    }
+
+    &--dark {
+        background-color: $primary__color--dark;
+        border: solid 1px $primary__color--dark;
+        color: $primary__color;
+
+        &:hover {
+            background-color: $primary__color--dark;
+            border: solid 1px $accent__color;
+            color: $accent__color;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+
+.one-click-demos {
+    .inner-demos {
+        display: flex;
+        flex-wrap: wrap;
+
+        .demos-heading {
+            font-weight: 400;
+            font-size: 48px;
+            text-align: center;
+            padding-bottom: 0;
+            width: 100%;            
+        }
+        .demos-description {
+            text-align: center;
+            line-height: 24px;
+            padding-bottom: $space__gutter--mobile*2;
+        }
+
+        .demos-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &__item {
+                margin-bottom: $space__gutter--mobile;
+            }
+        }
+    }
+}

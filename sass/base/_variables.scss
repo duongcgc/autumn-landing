@@ -1,0 +1,27 @@
+
+// Main
+$body__font                 : "Montserrat";
+$body__font--size           : 16px;
+$normal__font--size         : 14px;
+$small__font--size          : 12px;
+$primary__color             : #000000;
+$primary__color--dark       : #ffffff;
+$accent__color              : #99521F;
+
+// Spacing
+$space__section             : 60px;
+$space__section--mobile     : 30px;
+$space__gutter              : 30px;
+$space__gutter--mobile      : 15px;
+$space__component           : 40px;
+$space__component-md        : 30px;
+$space__component-sm        : 20px;
+$space__component-xs        : 10px;
+
+// Responsive
+$size-site-xxxl:  1400px; // @media min-width: 1400px max-width:1320px
+$size-site-xxl:  1240px; // @media min-width: 1240px max-width:1200px
+$size-site-xl:   1120px; // @media min-width: 1120px max-width:1080px
+$size-site-lg:   1020px; // @media min-width: 1020px max-width:980px
+$size-site-md:   760px;  // @media min-width: 760px max-width:720px
+$size-site-sm:   576px;  // @media else max-width: 100%

@@ -1,0 +1,62 @@
+// Center block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Inside of boxed container
+@mixin container--boxed {
+    @media screen and (min-width: $size-site-md) {
+        max-width: $size-site-md - 40px;
+        margin: auto;
+    }
+
+    @media screen and (min-width: $size-site-lg) {
+        max-width: $size-site-xxl - 40px;
+        margin: auto;
+    }
+
+    @media screen and (min-width: $size-site-xl) {
+        max-width: $size-site-xl - 40px;
+        margin: auto;
+    }
+
+    @media screen and (min-width: $size-site-xxl) {
+        max-width: $size-site-xxl - 40px;
+        margin: auto;
+    }
+
+    @media screen and (min-width: $size-site-xxxl){
+        max-width: $size-site-xxxl - 40px;
+        margin: auto;
+    }
+}
+
+// Inside of boxed fuild
+@mixin container--fluild {
+    @media screen and (min-width: $size-site-md) {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    @media screen and (min-width: $size-site-lg) {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    @media screen and (min-width: $size-site-xl) {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    @media screen and (min-width: $size-site-xxl) {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    @media screen and (min-width: $size-site-xxxl) {
+        max-width: 100%;
+        margin: 0;
+    }
+}
