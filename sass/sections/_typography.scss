@@ -1,1 +1,49 @@
+.typography {
+    .inner-typography {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: $space__component $space__gutter--mobile;
 
+        @media screen and (min-width: $space__component-md) {
+            padding: $space__component*2 $space__gutter--mobile;
+        }
+
+        .typography-heading {
+            color: #333;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 0;            
+        }
+
+        p {
+            text-align: center;
+            line-height: 24px;
+            margin-bottom: $space__component;
+
+            @media screen and (min-width: $space__component-md) {
+                margin-bottom: $space__component*2;
+            }
+        }
+
+        .image {
+            display: inline-block;
+            text-align: center;
+
+            @media screen and (min-width: $space__component-md) {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                img:nth-child(2) {
+                    position: relative;
+                    top: -40px;
+                    left: -200px;
+                }
+            }
+        }
+
+    }
+}

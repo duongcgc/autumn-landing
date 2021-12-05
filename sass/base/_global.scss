@@ -111,3 +111,22 @@ img {
         }
     }
 }
+
+// Section Dark
+.section-dark {
+    background-color: $primary__color;
+    color: $primary__color--dark;
+}
+
+// Section Color
+.section-color {
+    background-color: $secondary__color--bg;
+    color: $secondary__color
+}
+
+
+// Section BG Overlay
+.section-overlay {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+}

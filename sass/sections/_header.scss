@@ -3,12 +3,14 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 
     // On PC
     @media screen and (min-width: $size-site-md) {
         background-position: center 0;
         background-repeat: repeat-x;
         background-size: contain;
+        padding-bottom: 250px;
     }
 
     overflow: hidden;
@@ -99,6 +101,7 @@
 
 .header-banner {
     text-align: center;
+    overflow: hidden;
 
     &__heading {
         font-weight: 400;
@@ -141,6 +144,43 @@
             @media screen and (min-width: $size-site-md) {
                 margin: 0 $space__component-sm/2;
             }            
+        }
+    }
+}
+
+.header-paralax {
+
+    &__item {
+
+        position: absolute;
+
+        // left
+        &--6 {
+            left: 0;
+            bottom: -80px;
+        }
+        &--5 {
+            left: -200px;
+            bottom: 120px;
+        }
+        &--4 {
+            left: 280px;
+            bottom: -220px;
+        }
+
+
+        // right
+        &--1 {
+            right: -350px;           
+            bottom: 120px;
+        }
+        &--2 {
+            right: -100px;            
+            bottom: -120px;
+        }
+        &--3 {
+            right: 360px;
+            bottom: -250px;
         }
     }
 }

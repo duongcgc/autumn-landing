@@ -1,1 +1,114 @@
+.post-styles {
+    background-image: url(/images/multi-post-types/section-bg.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 
+    .section-overlay {
+        @media screen and (min-width: $size-site-md) {
+            padding-bottom: $space__component*10;
+        }
+    }    
+
+    .inner-post-styles {
+        display: flex;
+        flex-wrap: wrap;
+        padding: $space__component * 2 $space__gutter--mobile;
+
+        @media screen and (min-width: $size-site-md) {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .post-styles-heading {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 50px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+            & + p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0;
+                margin-bottom: $space__component;
+            }
+        }
+
+        .post-styles-list {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+
+            &__item {
+                align-items: flex-start;
+                display: flex;
+                padding: $space__component-xs 0;
+
+                &::before {
+                    align-items: flex-start;
+                    content: url(/images/multi-post-types/check-circle.svg);
+                    display: flex;
+                    justify-content: center;
+                    padding-right: $space__component-sm;
+                }
+            }
+        }
+
+        
+    }
+
+    .posts-paralax {
+        &__item {
+            img {
+                position: absolute;
+                bottom: -400px;
+                left: 0;
+            }
+
+            &--1 {
+                img {
+                    left: -100px;
+                    bottom: -260px;
+                }
+            }
+
+            &--5 {
+                 img {
+                    left: 110px;
+                    bottom: -400px;
+                }
+            }
+
+            &--3 {
+                img {
+                    left:450px;
+                    bottom: -350px;
+                }
+            }
+
+            &--4 {
+                img {
+                    left: calc(100% - 1000px);
+                }
+            }
+
+            &--2 {
+                img {
+                    left: calc(100% - 680px);
+                    bottom: -350px;
+                }
+            }                      
+
+            &--6 {
+                img {
+                    left: calc(100% - 360px);
+                    bottom: -380px;
+                }
+            }
+        }
+    }
+}

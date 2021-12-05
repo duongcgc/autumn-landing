@@ -1,20 +1,34 @@
-
 .one-click-demos {
     .inner-demos {
         display: flex;
         flex-wrap: wrap;
+        padding: $space__component $space__gutter--mobile;
+
+        @media screen and (min-width: $size-site-md) {
+            padding: $space__component*2 $space__gutter--mobile;
+        }
 
         .demos-heading {
             font-weight: 400;
             font-size: 48px;
             text-align: center;
             padding-bottom: 0;
-            width: 100%;            
+            width: 100%;
+
+            @media screen and (min-width: $size-site-md) {
+                margin-bottom: 0;
+            }
+
         }
+
         .demos-description {
             text-align: center;
             line-height: 24px;
-            padding-bottom: $space__gutter--mobile*2;
+            padding-bottom: $space__gutter--mobile * 2;
+
+            @media screen and (min-width: $size-site-md) {
+                padding-bottom: $space__component*2;
+            }
         }
 
         .demos-list {
@@ -23,7 +37,121 @@
             justify-content: space-between;
 
             &__item {
-                margin-bottom: $space__gutter--mobile;
+                background-image: url(/images/section-demo/browser-top.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center 0;
+                padding-top: 21px;
+                margin-bottom: $space__gutter--mobile*2;
+                height: 350px;
+                width: 100%;
+                overflow: hidden;
+                filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.15));
+
+                @media screen and (min-width: $size-site-md) {                    
+                    height: 400px;
+                    margin-bottom: $space__component;         
+                    width: calc(50% - 20px);           
+                }
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+
+                    img {
+                        display: inline-block;
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        transform: translateY(0);                        
+                        transition: all 1s;
+                    }
+
+                    &:hover {
+                        img {
+                            top: auto;
+                            bottom: 0;
+                            transform: translateY(-50%);
+                            transition: all 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .demos-footer {
+        background-color: #FFFBF5;
+        color: #333333;
+        padding: $space__component $space__gutter--mobile;
+        text-align: center;
+
+
+        &__title {
+            font-weight: 600;
+            font-size: 36px;  
+            margin-bottom: $space__component;          
+        }
+
+        .demos-footer-features {
+            
+            display: flex;  
+            flex-wrap: wrap;
+            justify-content: space-around;          
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            padding: 0 $space__section;
+            margin-bottom: $space__component;
+
+            @media screen and (min-width: $size-site-md) {                    
+                flex-wrap: nowrap;
+                justify-content: center;
+            }    
+
+            &__item {
+                display: flex;
+                align-items: center;
+                padding: $space__component-xs;
+                text-align: left;                
+                width: 100%;
+
+                @media screen and (min-width: $size-site-md) {                    
+                    width: inherit;
+                    padding: $space__component-sm;
+                }   
+
+                .icon {
+                    
+                    padding-right: $space__component-sm;
+                    display: flex;
+
+                   &::before {
+                       content: url(/images/section-demo/clock.svg);
+                       height: 24px;
+                       width: 24px;
+                   }
+
+                   &--easy {
+                       &::before {
+                            content: url(/images/section-demo/sliders.svg);
+                       }
+                   }
+
+                   &--no-code {
+                       &::before {
+                            content: url(/images/section-demo/code.svg);
+                       }
+                   }
+
+                   &--all-demo {
+                       &::before {
+                            content: url(/images/section-demo/check-circle.svg);
+                       }
+                   }
+                }
             }
         }
     }
