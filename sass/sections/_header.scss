@@ -10,7 +10,9 @@
         background-position: center 0;
         background-repeat: repeat-x;
         background-size: contain;
-        padding-bottom: 250px;
+        padding-bottom: 250px;        
+        padding-top: $space__component*2;
+        
     }
 
     overflow: hidden;
@@ -56,6 +58,7 @@
         @media screen and (min-width: $size-site-md) {
             border-bottom: solid 1px $primary__color;            
             flex-wrap: nowrap;
+            justify-content: center;
             font-size: $small__font--size;
             padding-bottom: 0;            
             max-height: 50px;

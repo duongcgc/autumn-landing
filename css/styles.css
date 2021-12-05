@@ -163,6 +163,7 @@ img {
     background-repeat: repeat-x;
     background-size: contain;
     padding-bottom: 250px;
+    padding-top: 80px;
   }
 }
 
@@ -216,6 +217,9 @@ img {
     border-bottom: solid 1px #000000;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 12px;
     padding-bottom: 0;
     max-height: 50px;
