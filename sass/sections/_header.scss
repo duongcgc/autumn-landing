@@ -24,9 +24,7 @@
     position: sticky;
     z-index: 9999;
     top: 0;
-    padding-top: $space__component-md;
-    padding-bottom: $space__component-md;
-    margin-bottom: $space__component-md;
+    padding: $space__component-md;
 
     display: flex;
     flex-wrap: wrap;
@@ -35,8 +33,7 @@
     // On PC
     @media screen and (min-width: $size-site-md) {
         flex-wrap: nowrap;
-        padding-bottom: $space__component-sm;
-
+        padding: $space__component-sm;
     }
 
     .main-header__logo {
