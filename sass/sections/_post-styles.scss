@@ -1,5 +1,5 @@
 .post-styles {
-    background-image: url(/images/multi-post-types/section-bg.jpg);
+    background-image: url(images/multi-post-types/section-bg.jpg);
     background-size: cover;
     background-position: center 0;
     background-repeat: no-repeat;
@@ -8,9 +8,9 @@
 
     .section-overlay {
         @media screen and (min-width: $size-site-md) {
-            padding-bottom: $space__component*10;
+            padding-bottom: $space__component * 10;
         }
-    }    
+    }
 
     .inner-post-styles {
         display: flex;
@@ -50,63 +50,70 @@
 
                 &::before {
                     align-items: flex-start;
-                    content: url(/images/multi-post-types/check-circle.svg);
+                    content: url(images/multi-post-types/check-circle.svg);
                     display: flex;
                     justify-content: center;
                     padding-right: $space__component-sm;
                 }
             }
         }
-
-        
     }
 
     .posts-paralax {
-        &__item {
-            img {
-                position: absolute;
-                bottom: -400px;
-                left: 0;
-            }
+        display: flex;
+        justify-content: center;
+        position: static;
+        flex-wrap: wrap;
+    }
 
-            &--1 {
+    @media screen and (min-width: $size-site-md) {
+        .posts-paralax {
+            &__item {
                 img {
-                    left: -100px;
-                    bottom: -260px;
-                }
-            }
-
-            &--5 {
-                 img {
-                    left: 110px;
+                    position: absolute;
                     bottom: -400px;
+                    left: 0;
                 }
-            }
 
-            &--3 {
-                img {
-                    left:450px;
-                    bottom: -350px;
+                &--1 {
+                    img {
+                        left: -100px;
+                        bottom: -260px;
+                    }
                 }
-            }
 
-            &--4 {
-                img {
-                    left: calc(100% - 1000px);
+                &--5 {
+                    img {
+                        left: 110px;
+                        bottom: -400px;
+                    }
                 }
-            }
 
-            &--2 {
-                img {
-                    left: calc(100% - 680px);
-                    bottom: -350px;
+                &--3 {
+                    img {
+                        left: 450px;
+                        bottom: -350px;
+                    }
                 }
-            }                      
 
-            &--6 {
-                img {
-                    left: calc(100% - 360px);
-                    bottom: -380px;
+                &--4 {
+                    img {
+                        left: calc(100% - 1000px);
+                    }
+                }
+
+                &--2 {
+                    img {
+                        left: calc(100% - 680px);
+                        bottom: -350px;
+                    }
+                }
+
+                &--6 {
+                    img {
+                        left: calc(100% - 360px);
+                        bottom: -380px;
+                    }
                 }
             }
         }

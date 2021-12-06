@@ -1,5 +1,5 @@
 .darkmode {
-    background-image: url(/images/header-bg.png);
+    background-image: url(images/header-bg.png);
     background-color: #121212;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
@@ -42,13 +42,13 @@
                 text-decoration: none;                
 
                 &::before {
-                    content: url(/images/section-darkmode/sun.svg);  
+                    content: url(images/section-darkmode/sun.svg);  
                     padding-right: $space__component-sm;                  
                     padding-left: $space__component-xs;
                 }
 
                 &::after {
-                    content: url(/images/section-darkmode/moon.svg);
+                    content: url(images/section-darkmode/moon.svg);
                     padding-left: $space__component-sm;                  
                     padding-right: $space__component-xs;
                 }
@@ -92,25 +92,25 @@
                     align-items: center;
 
                     &::before {
-                        content: url(/images/section-darkmode/sun.svg);
+                        content: url(images/section-darkmode/sun.svg);
                         padding-right: $space__component-sm;
                     }
 
                     &--mode {
                         &::after {
-                            content: url(/images/section-darkmode/moon.svg);
+                            content: url(images/section-darkmode/moon.svg);
                         }
                     }
 
                     &--editor {
                         &::before {
-                            content: url(/images/section-darkmode/layout.svg);
+                            content: url(images/section-darkmode/layout.svg);
                         }
                     }
 
                     &--color {
                         &::before {
-                            content: url(/images/section-darkmode/other.svg);
+                            content: url(images/section-darkmode/other.svg);
                         }
                     }
                 }

@@ -37,7 +37,7 @@
             justify-content: space-between;
 
             &__item {
-                background-image: url(/images/section-demo/browser-top.png);
+                background-image: url(images/section-demo/browser-top.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center 0;
@@ -129,26 +129,26 @@
                     display: flex;
 
                    &::before {
-                       content: url(/images/section-demo/clock.svg);
+                       content: url(images/section-demo/clock.svg);
                        height: 24px;
                        width: 24px;
                    }
 
                    &--easy {
                        &::before {
-                            content: url(/images/section-demo/sliders.svg);
+                            content: url(images/section-demo/sliders.svg);
                        }
                    }
 
                    &--no-code {
                        &::before {
-                            content: url(/images/section-demo/code.svg);
+                            content: url(images/section-demo/code.svg);
                        }
                    }
 
                    &--all-demo {
                        &::before {
-                            content: url(/images/section-demo/check-circle.svg);
+                            content: url(images/section-demo/check-circle.svg);
                        }
                    }
                 }

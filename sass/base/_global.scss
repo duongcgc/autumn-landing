@@ -11,6 +11,7 @@ body {
     font-size: $body__font--size;
     color: $primary__color;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 ul,
@@ -39,6 +40,9 @@ img {
 
 .column-half {
     width: 50%;
+    img {
+        max-width: 100%;
+    }
 }
 
 // Components
