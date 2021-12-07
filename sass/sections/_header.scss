@@ -19,12 +19,14 @@
 }
 
 .main-header {
-    background: white;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    z-index: 9999;
-    top: 0;
-    padding: $space__component-md;
+    @media screen and (min-width: $size-site-md) {
+        background: white;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        z-index: 9999;
+        top: 0;
+        padding: $space__component-md;
+    }
 
     display: flex;
     flex-wrap: wrap;
