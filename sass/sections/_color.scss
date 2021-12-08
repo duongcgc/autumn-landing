@@ -34,10 +34,23 @@
     }
 
     .image {
-        display: inline-block;
-        text-align: center;
+        display: inline-block;                
+        text-align: center;        
+        justify-content: center;
+        flex-wrap: wrap;
 
-        @media screen and (min-width: $space__component-md) {
+        img {
+            display: inline-block;
+            max-width: 100%;
+
+            &:first-child {
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (min-width: $size-site-md) {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;

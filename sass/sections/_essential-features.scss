@@ -51,72 +51,72 @@
 
                 .icon {
                     &::before {
-                        content: url(/images/section-essential/download.svg);
+                        content: url(images/section-essential/download.svg);
                     }
 
                     &--translate {
                         &::before {
-                            content: url(/images/section-essential/translate-language.svg);
+                            content: url(images/section-essential/translate-language.svg);
                         }
                     }
 
                     &--seo {
                         &::before {
-                            content: url(/images/section-essential/bar-chart.svg);
+                            content: url(images/section-essential/bar-chart.svg);
                         }
                     }
 
                     &--support {
                         &::before {
-                            content: url(/images/section-essential/headphones.svg);
+                            content: url(images/section-essential/headphones.svg);
                         }
                     }
 
                     &--adaptive {
                         &::before {
-                            content: url(/images/section-essential/image.svg);
+                            content: url(images/section-essential/image.svg);
                         }
                     }
 
                     &--update {
                         &::before {
-                            content: url(/images/section-essential/rotate-cw.svg);
+                            content: url(images/section-essential/rotate-cw.svg);
                         }
                     }
 
                     &--gallery {
                         &::before {
-                            content: url(/images/section-essential/layout.svg);
+                            content: url(images/section-essential/layout.svg);
                         }
                     }
 
                     &--customizer {
                         &::before {
-                            content: url(/images/section-essential/sliders.svg);
+                            content: url(images/section-essential/sliders.svg);
                         }
                     }
 
                     &--autoloading {
                         &::before {
-                            content: url(/images/section-essential/loader.svg);
+                            content: url(images/section-essential/loader.svg);
                         }
                     }
 
                     &--posts-view {
                         &::before {
-                            content: url(/images/section-essential/eye.svg);
+                            content: url(images/section-essential/eye.svg);
                         }
                     }
 
                     &--live-search {
                         &::before {
-                            content: url(/images/section-essential/search.svg);
+                            content: url(images/section-essential/search.svg);
                         }
                     }
 
                     &--gdpr {
                         &::before {
-                            content: url(/images/section-essential/lock.svg);
+                            content: url(images/section-essential/lock.svg);
                         }
                     }
                 }
