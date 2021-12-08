@@ -30,7 +30,9 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: $space__gutter--mobile;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 
     // On PC
     @media screen and (min-width: $size-site-md) {
@@ -65,13 +67,12 @@
 
         // On PC
         @media screen and (min-width: $size-site-md) {
-            border-bottom: solid 1px $primary__color;
             flex-wrap: nowrap;
             justify-content: center;
-            font-size: $small__font--size;
+            font-size: $body__font--size;
             padding-bottom: 0;
             max-height: 50px;
-            width: 60%;
+            width: 60%;            
         }
 
         li {
@@ -79,7 +80,7 @@
 
             // On PC
             @media screen and (min-width: $size-site-md) {
-                width: inherit;
+                width: auto;                
             }
 
             a {
@@ -94,6 +95,7 @@
                 @media screen and (min-width: $size-site-md) {
                     padding: $space__component-xs 0;
                     border: none;
+                    padding: 5px 10px;
                 }
 
                 &:hover {

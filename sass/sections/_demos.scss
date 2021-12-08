@@ -37,19 +37,18 @@
             justify-content: space-between;
 
             &__item {
-                background-image: url(images/section-demo/browser-top.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center 0;
-                padding-top: 21px;
+                border: solid 4px #BDBDBD;
                 margin-bottom: $space__gutter--mobile*2;
                 height: 350px;
-                width: 100%;
+                width: 100%;                
                 overflow: hidden;
                 filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.15));
 
                 @media screen and (min-width: $size-site-md) {                    
-                    height: 400px;
+                    height: 500px;
                     margin-bottom: $space__component;         
                     width: calc(50% - 20px);           
                 }

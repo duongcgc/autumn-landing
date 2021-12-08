@@ -52,7 +52,8 @@ img {
 
     // On PC
     @media screen and (min-width: $size-site-md) {
-        width: inherit;      
+        width: 20%;    
+        text-align: center;  
     }
 }
 
