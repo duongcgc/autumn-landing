@@ -21,7 +21,7 @@
 .main-header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 
     // On PC
     @media screen and (min-width: $size-site-md) {
